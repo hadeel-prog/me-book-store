@@ -1,0 +1,133 @@
+
+body {
+  background-color: #F7ECDE;
+}
+
+img{width: 100px;}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeOut 3s; 
+  animation-delay: 2s;
+  
+  }
+
+  .loader .top {
+    width: 50%;
+    height: 100%;
+    background-color: #3498dbe0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right:0 ;
+    left: 50%;
+    transform: translateX(0%);
+    animation: Right 3s ease forwards; 
+    
+  }
+
+  .loader .bottom{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 50%; 
+    left: 0;
+    background-color: #fec160e6;
+    transform: translateX(0);
+    animation: Left 3s ease forwards; 
+   
+  }
+
+  @keyframes Right {
+    0% {
+      transform: translateX(0%); 
+    }
+    100% {
+      transform: translateX(100%);
+    }
+   
+  }
+  @keyframes Left {
+    0% {
+      transform: translateX(0%); 
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+   
+  }
+  
+
+.line-bg{
+    width: fit-content;
+    margin: auto;
+    position:relative;
+
+}
+.line-bg:hover::after{
+    height: 70%;
+}
+.line-bg::after{
+    content: " ";
+    position: absolute;
+    height: 33%;
+    width: 102%;
+    background-color: #FEC260;
+    bottom: 0;
+    left: -2%;
+    transition: all 0.3s ease;
+}
+h1{
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    text-align: center;
+    margin-top: 50px;
+    z-index: 999;
+    position: relative;
+    top: 0;
+
+}
+
+h2{
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    color: transparent;
+}
+
+.doot{
+   
+    border-top: 2px dotted black;
+    margin-top: 50px;
+    padding-top: 30px;
+   
+   
+}
+.doot-1{color: #3EA55B;} 
+.doot-2{ color: #b5ac49;} 
+
+.header-label {
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 8px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+
+
